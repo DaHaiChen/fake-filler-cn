@@ -1,0 +1,46 @@
+.playground-root {
+    min-height: 100vh;
+    padding: 24px;
+    box-sizing: border-box;
+    background: #f5f7fa;
+}
+
+.playground-card {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 24px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgb(0 0 0 / 8%);
+}
+
+.playground-title {
+    margin: 0 0 8px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #303133;
+}
+
+.playground-desc {
+    margin: 0 0 20px;
+    font-size: 14px;
+    color: #909399;
+}
+
+.playground-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.playground-back {
+    display: inline-block;
+    margin-bottom: 16px;
+    font-size: 14px;
+    color: #409eff;
+    text-decoration: none;
+}
+
+.playground-back:hover {
+    text-decoration: underline;
+}

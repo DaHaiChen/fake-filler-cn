@@ -1,0 +1,32 @@
+{
+  "name": "fake-filler-cn",
+  "version": "4.0.0",
+  "description": "中文表单填充扩展 - 一键填充网页表单为真实的中文虚拟数据",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:playground": "vite --mode playground --open /",
+    "build": "vue-tsc --noEmit && vite build && vite build --config vite.content.config.ts",
+    "preview": "vite preview",
+    "typecheck": "vue-tsc --noEmit"
+  },
+  "dependencies": {
+    "date-fns": "^3.0.0",
+    "pinia": "^2.1.0",
+    "randexp": "^0.5.3",
+    "vue": "^3.4.0"
+  },
+  "devDependencies": {
+    "ant-design-vue": "^4.2.6",
+    "@types/chrome": "^0.0.260",
+    "@vitejs/plugin-vue": "^5.0.0",
+    "element-plus": "^2.9.0",
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.0",
+    "tailwindcss": "^3.4.0",
+    "typescript": "^5.3.0",
+    "vite": "^5.0.0",
+    "vue-router": "^4.5.0",
+    "vue-tsc": "^3.2.6"
+  }
+}

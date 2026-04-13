@@ -1,0 +1,22 @@
+{
+  "extensionName": {
+    "message": "中文填表助手",
+    "description": "扩展名称"
+  },
+  "extensionDescription": {
+    "message": "一键填充网页表单为真实的中文虚拟数据，专为中国用户设计",
+    "description": "扩展描述"
+  },
+  "ActionTitle": {
+    "message": "中文填表助手"
+  },
+  "commands_fillAllInputs": {
+    "message": "填充所有输入框"
+  },
+  "commands_fillThisForm": {
+    "message": "填充当前表单"
+  },
+  "commands_fillThisInput": {
+    "message": "填充当前输入框"
+  }
+}

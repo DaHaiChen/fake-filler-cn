@@ -1,0 +1,62 @@
+{
+  "manifest_version": 3,
+  "name": "中文填表助手",
+  "short_name": "填表助手",
+  "version": "4.0.0",
+  "description": "一键填充网页表单为真实的中文虚拟数据，专为中国用户设计",
+  "default_locale": "zh_CN",
+  "offline_enabled": true,
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  },
+  "icons": {
+    "16": "images/icon-16.png",
+    "32": "images/icon-32.png",
+    "48": "images/icon-48.png",
+    "64": "images/icon-64.png",
+    "96": "images/icon-96.png",
+    "128": "images/icon-128.png"
+  },
+  "host_permissions": ["<all_urls>"],
+  "permissions": ["contextMenus", "activeTab", "storage", "scripting"],
+  "action": {
+    "default_icon": {
+      "16": "images/icon-16.png",
+      "32": "images/icon-32.png",
+      "48": "images/icon-48.png",
+      "64": "images/icon-64.png",
+      "96": "images/icon-96.png",
+      "128": "images/icon-128.png"
+    },
+    "default_title": "中文填表助手"
+  },
+  "commands": {
+    "fill_all_inputs": {
+      "description": "填充所有输入框",
+      "suggested_key": {
+        "default": "Ctrl+Shift+F"
+      }
+    },
+    "fill_this_form": {
+      "description": "填充当前表单"
+    },
+    "fill_this_input": {
+      "description": "填充当前输入框"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content-script.js"],
+      "all_frames": true
+    }
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "options_ui": {
+    "page": "index.html",
+    "open_in_tab": true
+  }
+}
